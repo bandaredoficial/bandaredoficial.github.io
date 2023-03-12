@@ -1,0 +1,70 @@
+@import "./colors";
+@import "./fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../dist/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .logo {
+        border-radius: 50%;
+        margin-bottom: 50px;
+
+        @media(max-width: 400px) {
+            width: 150px;
+            height:  150px;
+        }
+    }
+
+    .link-field {
+        max-width: 400px;
+        width: 100%;
+
+        .link {
+            display: flex;
+            align-items: center;
+            background-color: $blue;
+            padding: 14px;
+            // font-weight: bold;
+            text-decoration: none;
+            color: $white;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 3px solid $purple;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            // text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-bottom: 10px;
+
+            @media(max-width: 400px) {
+                font-size: 14px;
+            }
+
+            .icon {
+                font-size: 30px;
+                margin-right: 10px;
+                display: block;
+                width: 50px;
+
+                @media(max-width: 400px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
